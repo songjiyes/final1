@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<title>location</title>
+<meta charset="utf-8">
+    <style>mark{background-color:mediumseagreen}</style>
+</head>
+
+<body>
+<center>
+    <h1><mark><a href="" title="미림여고 도우미"><font face="MD개성체" color="white">미림여고 도우미</font></a></mark></h1>
+    <style>
+
+* {margin:0;padding:0;border:0;}
+.tab_content {position:absolute;top:55%;left:50%;transform:translate(-50%,-50%);font-size:12px;}
+
+input[type="radio"] {display:none;}
+input[type="radio"] + label {display:inline-block;padding:20px;background:#ccc;color:#999;font-size:14px;cursor:pointer;}
+input[type="radio"]:checked + label {background:#aaa;color:#000;}
+
+.conbox {width:800px;height:500px;background:#aaa;margin:0 auto;display:none;}
+input[id="tab01"]:checked ~ .con1 {display:block;}
+input[id="tab02"]:checked ~ .con2 {display:block;}
+input[id="tab03"]:checked ~ .con3 {display:block;}
+input[id="tab04"]:checked ~ .con4 {display:block;}
+</style>
+
+<div class="tab_content">
+    <input type="radio" name="tabmenu" id="tab01" checked>
+    <label for="tab01">중앙교무실</label>
+    <input type="radio" name="tabmenu" id="tab02">
+    <label for="tab02">2학년부실</label>
+    <input type="radio" name="tabmenu" id="tab03">
+    <label for="tab03">3학년부실</label>
+    <input type="radio" name="tabmenu" id="tab04">
+    <label for="tab04">글로벌 역량실</label>
+    <div class="conbox con1"><img src="1ff.png" width="100%"></div>
+    <div class="conbox con2"><img src="2ff.png" width="80%"></div>
+    <div class="conbox con3"><img src="3ff.png" width="74%"></div>
+    <div class="conbox con4"><img src="globall.png" width="43%"></div>
+</div>
+</center>
+</body>
+</html>
